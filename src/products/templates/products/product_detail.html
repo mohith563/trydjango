@@ -1,0 +1,8 @@
+<!-- Overridden by templates specified in urls.py if they have the same name -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>In app template: {{object.title}}</h1>
+<p>{{object.description}}</p>
+{{object.price}} <br />{{object.summary}}
+{% endblock %}
