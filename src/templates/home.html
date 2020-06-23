@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
     <h1>
         Hello World!
     </h1>
-    <p>
-        This is a template
-    </p>
-</body>
-</html>
+    <p>This is a template</p>
+{% endblock %}
+
+
+{% block footer %}
+    <footer style="height: 20%; background-color: dodgerblue;">
+        Footer of homepage
+    </footer>
+{% endblock %}
