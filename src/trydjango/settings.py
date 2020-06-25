@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'products',
     'pages',
+    'blog',
     #testing commit
     #added products app
 ]
