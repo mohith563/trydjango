@@ -19,4 +19,11 @@ class ArticleForm(forms.ModelForm):
                 )
     author = forms.CharField(required = True,
                                 max_length=30)
+    class Meta:
+        model = Article
+        fields = [
+            'title',
+            'article',
+            'author'
+        ]                                
 

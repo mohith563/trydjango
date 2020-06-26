@@ -24,11 +24,15 @@ from products.views import ( product_detail_view,
                             product_delete_view,
                             product_list_view,
                             product_update_view)
-from blog.views import (article_list_view)                            
+from blog.views import (article_list_view,
+                        article_detail_view,
+                        article_create_view)                            
 
 urlpatterns = [
-    path('blogs/list/',article_list_view,name='article-list'),
-   path('products/', include('products.urls')),
+    path('blogs/',include('blog.urls')),
+
+    path('products/', include('products.urls')),
+
     path('',home_view,name='home'),
     path('contacts/',contacts_view,name='contacts'),
     path('about/',about_view,name='about'),
