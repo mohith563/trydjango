@@ -41,8 +41,7 @@ INSTALLED_APPS = [
     'pages',
     'products',
     'blog',
-    #testing commit
-    #added products app
+    'courses',
 ]
 
 MIDDLEWARE = [
