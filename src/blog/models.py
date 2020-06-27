@@ -6,7 +6,8 @@ from django.urls import reverse
 class Article(models.Model):
     title       = models.CharField(max_length=20)
     article     = models.TextField(blank=True, null=True)
-    author      = models.TextField(blank=False,null=False)
+    author      = models.CharField(blank=False,null=False, max_length=40)
 
     def get_absolute_url(self):
-        return reverse('blogs:article-detail',kwargs={'id':self.id})
+        return reverse('articles:article-detail',kwargs={'id':self.id})
+

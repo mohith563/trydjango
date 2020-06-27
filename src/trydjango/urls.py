@@ -16,19 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from pages.views import home_view, contacts_view, about_view
-from products.views import ( product_detail_view, 
-                            product_create_view, 
-                            render_initial_data,
-                            dynamic_lookup_view,
-                            product_delete_view,
-                            product_list_view,
-                            product_update_view)
-from blog.views import (article_list_view,
-                        article_detail_view,
-                        article_create_view)                            
+from pages.views import home_view, contacts_view, about_view                           
 
 urlpatterns = [
+
     path('blogs/',include('blog.urls')),
 
     path('products/', include('products.urls')),
